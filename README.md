@@ -19,7 +19,7 @@ This dataset contains resistivity logging measurements collected from horizontal
 - **DOI**: [10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX)
 
 ## 🏗️ Directory Structure
-
+```
 /dataset/ 
 ├── raw/ │ 
 └── resistivity_logs_raw.csv 
@@ -30,6 +30,7 @@ This dataset contains resistivity logging measurements collected from horizontal
 │ └── forward_model_output.json ├── metadata/ 
 │ └── well_metadata.json 
 └── README.md
+```
 
 - **`raw/`**: Original field measurements without preprocessing.
 - **`processed/`**: Cleaned logs aligned by depth and ready for ML input.
