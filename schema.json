@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "final_trajectory": {
+            "description": "The final trajectory of the wellbore",
+            "type": "object",
+            "properties": {
+                "timestamp": {
+                    "description": "Timestamp of the final trajectory",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "well_points": {
+                    "description": "List of well points in the trajectory",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "azim": {"description": "Azimuth of the well point", "type": "number"},
+                            "incl": {"description": "Inclination of the well point", "type": "number"},
+                            "md": {"description": "Measured depth of the well point", "type": "number"},
+                            "tvd": {"description": "True vertical depth of the well point", "type": "number"},
+                            "vs": {"description": "Vertical section of the well point", "type": "number"}
+                        },
+                        "required": ["azim", "incl", "md", "tvd", "vs"]
+                    }
+                }
+            },
+            "required": ["timestamp", "well_points"]
+        },
+        "interpretation_time_lapse": {
+            "description": "Time lapsed interpretation",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "csv_file_name": {"description": "CSV file name for the interpretation", "type": "string"},
+                    "horizon_depths": {"description": "List of horizon depths in the interpretation", "type": "array", "items": {"type": "number"}},
+                    "md_points": {"description": "List of measured depth points in the interpretation", "type": "array", "items": {"type": "number"}},
+                    "timestamp": {"description": "Timestamp of the interpretation", "type": "string", "format": "date-time"},
+                    "tvd_shifts": {"description": "List of true vertical depth shifts in the interpretation", "type": "array", "items": {"type": "number"}},
+                    "variable_thicknesses": {"description": "Boolean indicating if the interpretation uses variable thicknesses", "type": "boolean"}
+                },
+                "required": ["csv_file_name", "horizon_depths", "md_points", "timestamp", "tvd_shifts", "variable_thicknesses"]
+            }
+        },
+        "measurement_unit": {
+            "description": "Unit of measurement used in the data",
+            "type": "string"
+        },
+        "player_id": {
+            "description": "Identifier of the player",
+            "type": "string"
+        },
+        "round_id": {
+            "description": "Identifier of the round",
+            "type": "integer"
+        }
+    },
+    "required": ["final_trajectory", "interpretation_time_lapse", "measurement_unit", "player_id", "round_id"]
+}
