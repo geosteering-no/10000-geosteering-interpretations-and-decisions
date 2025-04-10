@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Answer Configuration Schema",
+    "type": "object",
+    "description": "Schema for a single ground-truth interpretation shown after competition rounds.",
+    "properties": {
+      "csv_file_name": {
+        "description": "Path or name of the CSV file that contains the authoritative horizon interpretation used as reference.",
+        "type": "string"
+      },
+      "horizon_depths": {
+        "description": "List of true vertical depths of geological horizons representing the correct subsurface model.",
+        "type": "array",
+        "items": { "type": "number" }
+      },
+      "md_points": {
+        "description": "Measured depths corresponding to the decision points or locations along the wellbore where horizon depths apply.",
+        "type": "array",
+        "items": { "type": "number" }
+      },
+      "name": {
+        "description": "Label for the answer configuration, typically indicating its role as the ground truth (e.g., 'Answer').",
+        "type": "string"
+      },
+      "timestamp": {
+        "description": "Timestamp when the answer was revealed or recorded in the system.",
+        "type": "string",
+        "format": "date-time"
+      },
+      "tvd_shifts": {
+        "description": "True vertical depth differences applied to shift the horizons for evaluation or visualization purposes.",
+        "type": "array",
+        "items": { "type": "number" }
+      },
+      "variable_thicknesses": {
+        "description": "Boolean flag indicating whether the reference model incorporates variable formation thickness.",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "csv_file_name",
+      "horizon_depths",
+      "md_points",
+      "name",
+      "timestamp",
+      "tvd_shifts",
+      "variable_thicknesses"
+    ],
+    "additionalProperties": false
+  }
+  

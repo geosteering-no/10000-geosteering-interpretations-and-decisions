@@ -40,9 +40,72 @@
                     "md_points": {"description": "List of measured depth points in the interpretation", "type": "array", "items": {"type": "number"}},
                     "timestamp": {"description": "Timestamp of the interpretation", "type": "string", "format": "date-time"},
                     "tvd_shifts": {"description": "List of true vertical depth shifts in the interpretation", "type": "array", "items": {"type": "number"}},
-                    "variable_thicknesses": {"description": "Boolean indicating if the interpretation uses variable thicknesses", "type": "boolean"}
+                    "variable_thicknesses": {"description": "Boolean indicating if the interpretation uses variable thicknesses", "type": "boolean"},
+                    "activity_counter": {
+                        "description": "The number of interpretation adjustments automatically recorded by the system between decision points. This count may be lower than the total number of user inputs, as not all intermediate steps are saved or exposed.",
+                        "type": "integer"
+                    }
                 },
                 "required": ["csv_file_name", "horizon_depths", "md_points", "timestamp", "tvd_shifts", "variable_thicknesses"]
+            }
+        },
+        "answer_pair": {
+            "description": "List containing the ground-truth model configuration revealed to the user after the competition. This list must always contain exactly one entry, representing the correct subsurface interpretation and trajectory used as reference.",
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 1,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "timestamp": {
+                        "description": "Timestamp when the answer was revealed or recorded in the system.",
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "csv_file_name": {
+                        "description": "Path or name of the CSV file that contains the authoritative horizon interpretation used as reference.",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Label for the answer configuration, typically indicating its role as the ground truth (e.g., 'Answer').",
+                        "type": "string"
+                    },
+                    "horizon_depths": {
+                        "description": "List of true vertical depths of geological horizons representing the correct subsurface model.",
+                        "type": "array",
+                        "items": { "type": "number" }
+                    },
+                    "md_points": {
+                        "description": "Measured depths corresponding to the decision points or locations along the wellbore where horizon depths apply.",
+                        "type": "array",
+                        "items": { "type": "number" }
+                    },
+                    "tvd_shifts": {
+                        "description": "True vertical depth differences applied to shift the horizons for evaluation or visualization purposes.",
+                        "type": "array",
+                        "items": { "type": "number" }
+                    },
+                    "variable_thicknesses": {
+                        "description": "Boolean flag indicating whether the reference model incorporates variable formation thickness.",
+                        "type": "boolean"
+                    },
+                    "well_points": {
+                        "description": "Wellbore trajectory points representing the correct or evaluated path used for calculating reference logs and horizon positions.",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "azim": { "description": "Azimuth of the well point", "type": "number" },
+                                "incl": { "description": "Inclination of the well point", "type": "number" },
+                                "md": { "description": "Measured depth", "type": "number" },
+                                "tvd": { "description": "True vertical depth", "type": "number" },
+                                "vs": { "description": "Vertical section", "type": "number" }
+                            },
+                            "required": ["azim", "incl", "md", "tvd", "vs"]
+                        }
+                    }
+                },
+                "required": ["timestamp"]
             }
         },
         "measurement_unit": {
