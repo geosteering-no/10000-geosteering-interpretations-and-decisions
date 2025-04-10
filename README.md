@@ -49,7 +49,7 @@ Cheraghi, Y., Alyaev, S., Bratvold, R. B., Hong, A., Kuvaev, I., Clark, S., & Zh
 
 **The dataset**:  
 Alyaev, S., Cheraghi, Y., Kuvaev, I., Clark, S., & Zhuravlev, A. (2025).  
-*Supporting Data for Over 10,000 Directional Drilling Decisions from the Geosteering World Cup 2021* [Dataset].  
+*10,000 Interpretations and Decisions from the Geosteering World Cup 2021* [Dataset].  
 **Zenodo**. https://doi.org/10.5281/zenodo.XXXXXXX
 
 ```bibtex
@@ -66,7 +66,7 @@ Alyaev, S., Cheraghi, Y., Kuvaev, I., Clark, S., & Zhuravlev, A. (2025).
 
 @misc{Alyaev2025Dataset,
   author       = {Alyaev, Sergey and Cheraghi, Yasaman and Kuvaev, Igor and Clark, Stephen and Zhuravlev, Andrei},
-  title        = {Supporting Data for Over 10,000 Directional Drilling Decisions from the Geosteering World Cup 2021},
+  title        = {10,000 Interpretations and Decisions from the Geosteering World Cup 2021},
   year         = {2025},
   publisher    = {Zenodo},
   doi          = {10.5281/zenodo.XXXXXXX},
