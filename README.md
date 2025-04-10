@@ -33,7 +33,7 @@ Extract `round1.zip` or `round2.zip` and read the `json/` files to access full p
 
 ## Data Collection & Processing
 
-More than 10,000 snapshots were recorded through an online system, consisting of interpretations of log data for each participant's well and corresponding decisions, every 2 minutes. These snapshots form a comprehensive database that is useful and valuable to provide insights into the decision-making process of the geosteerers and learning for improving geosteering decision-making. The dataset utilized in this study is openly accessible and published alongside the paper.
+Around 10,000 snapshots were recorded through an online system, consisting of interpretations of log data for each participant's well and corresponding decisions, every 2 minutes. These snapshots form a comprehensive database that is useful and valuable to provide insights into the decision-making process of the geosteerers and learning for improving geosteering decision-making. The dataset utilized in this study is openly accessible and published alongside the paper.
 
 
 
