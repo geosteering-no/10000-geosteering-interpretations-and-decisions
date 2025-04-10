@@ -108,10 +108,13 @@ Alyaev, S., Cheraghi, Y., Kuvaev, I., Clark, S., & Zhuravlev, A. (2025).
 
 ### Related articles:
 
-There are two older articles that use the data from the Geosteering World Cup 2021. The first one is a conference paper with the intial analysis of the results and the second one is a JPT article that discusses the results of the competitio in the context of geosteering industry.
+There are three older articles that use the data from the Geosteering World Cup 2021. 
+- The first one is a conference paper with the intial analysis of the results and
+- the second one is a JPT article that discusses the results of the competitio in the context of geosteering industry.
+- The third one used the interpretations as training data.
 
 ```bibtex
-@proceedings{10.15530/urtec-2022-3722510,
+@proceedings{cheraghi2022what,
     author = {Cheraghi, Yasaman and Alyaev, Sergey and Hong, Aojie and Kuvaev, Igor and Clark, Stephen and Zhuravlev, Andrei and Bratvold, Reidar Brumer},
     title = {What Can We Learn After 10,000 Geosteering Decisions?},
     volume = {Day 2 Tue, June 21, 2022},
@@ -123,7 +126,7 @@ There are two older articles that use the data from the Geosteering World Cup 20
     url = {https://doi.org/10.15530/urtec-2022-3722510},
     eprint = {https://onepetro.org/URTECONF/proceedings-pdf/22URTC/2-22URTC/D021S022R002/2802308/urtec-3722510-ms.pdf},
 }
-@article{10.2118/1222-0024-JPT,
+@article{rassenfoss2022study,
     author = {Rassenfoss, Stephen},
     title = {A Study Suggests Geosteers Often Are Missing the Target},
     journal = {Journal of Petroleum Technology},
@@ -136,6 +139,20 @@ There are two older articles that use the data from the Geosteering World Cup 20
     doi = {10.2118/1222-0024-JPT},
     url = {https://doi.org/10.2118/1222-0024-JPT},
     eprint = {https://onepetro.org/JPT/article-pdf/74/12/24/3065565/spe-1222-0024-jpt.pdf},
+}
+@article{muhammad2025geosteering,
+    author = {Muhammad, Ressi B. and Cheraghi, Yasaman and Alyaev, Sergey and Srivastava, Apoorv and Bratvold, Reidar B.},
+    title = {Geosteering Robot Powered by Multiple Probabilistic Interpretation and Artificial Intelligence: Benchmarking Against Human Experts},
+    journal = {SPE Journal},
+    volume = {30},
+    number = {03},
+    pages = {995-1009},
+    year = {2025},
+    month = {03},
+    issn = {1086-055X},
+    doi = {10.2118/218444-PA},
+    url = {https://doi.org/10.2118/218444-PA},
+    eprint = {https://onepetro.org/SJ/article-pdf/30/03/995/4407193/spe-218444-pa.pdf},
 }
 ```
 
