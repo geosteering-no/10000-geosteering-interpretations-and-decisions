@@ -7,7 +7,7 @@ Y. Cheraghi, S. Alyaev, R.B. Bratvold, A. Hong, I. Kuvaev, S. Clark, A. Zhuravle
 
 ## Overview
 
-This dataset contains over 10,000 time-stamped geosteering interpretations and directional drilling decisions collected during the Geosteering World Cup 2021—a large-scale, controlled experiment involving 349 expert participants. Each participant interacted with a simulated geosteering environment using real-time log data and SBS (Stratigraphy-Based Steering) techniques to steer wells through complex subsurface formations.
+This dataset contains around 10,000 time-stamped geosteering interpretations and directional drilling decisions collected during the Geosteering World Cup 2021—a large-scale, controlled experiment involving 349 expert participants. Each participant interacted with a simulated geosteering environment using real-time log data and SBS (Stratigraphy-Based Steering) techniques to steer wells through complex subsurface formations.
 
 The dataset includes sequential interpretation snapshots, well trajectories, and evaluation metrics, making it well-suited for studies in decision-making under uncertainty, human-AI interaction, and subsurface modeling. Two distinct drilling scenarios (conventional and unconventional) are featured, with all participants using the same baseline model and tools, enabling direct comparison of decision strategies and outcomes.
 
