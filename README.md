@@ -11,6 +11,23 @@ This dataset contains over 10,000 time-stamped geosteering interpretations and d
 
 The dataset includes sequential interpretation snapshots, well trajectories, and evaluation metrics, making it well-suited for studies in decision-making under uncertainty, human-AI interaction, and subsurface modeling. Two distinct drilling scenarios (conventional and unconventional) are featured, with all participants using the same baseline model and tools, enabling direct comparison of decision strategies and outcomes.
 
+## Example Trajectories
+
+Below are visualizations of the final well trajectories submitted by participants in each round, overlaid on the true target layer.
+
+### Round 1 – Unconventional Scenario
+
+![Final Trajectories – Unconventional](Trajectories-Unconventional.png)
+
+### Round 1 - Time-lapse Example for Player 3
+
+![Time-lapse Example](time-lapse-example/Player003.gif)
+
+### Round 2 – Conventional Scenario
+
+![Final Trajectories – Conventional](Trajectories-Conventional.png)
+
+
 ## Directory Structure
 ```
 LICENSE.txt                  # CC-BY 4.0 license text
@@ -23,6 +40,8 @@ round2.zip                   # Geosteering data for Round 2 (conventional scenar
 └── json/                    # JSON files with full player data (interpretations + trajectories)
 schema.json                  # JSON schema for player data format
 schema_answer.json           # JSON schema for answer (ground truth) format
+Trajectories-Conventional.png # Visualization of final well trajectories (conventional)
+Trajectories-Unconventional.png # Visualization of final well trajectories (unconventional)
 time-lapse-example/          # Example images for a time-lapse of a single participant
 ```
 
