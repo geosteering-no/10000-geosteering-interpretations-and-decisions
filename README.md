@@ -7,7 +7,7 @@ Y. Cheraghi, S. Alyaev, R.B. Bratvold, A. Hong, I. Kuvaev, S. Clark, A. Zhuravle
 
 ## Overview
 
-This dataset contains over 10,000 time-stamped geosteering interpretations and directional drilling decisions collected during the Geosteering World Cup 2021—a large-scale, controlled experiment involving 349 expert participants. Each participant interacted with a simulated geosteering environment using real-time log data and SBS (Stratigraphy-Based Steering) techniques to steer wells through complex subsurface formations.
+This dataset contains around 10,000 time-stamped geosteering interpretations and directional drilling decisions collected during the Geosteering World Cup 2021—a large-scale, controlled experiment involving 349 expert participants. Each participant interacted with a simulated geosteering environment using real-time log data and SBS (Stratigraphy-Based Steering) techniques to steer wells through complex subsurface formations.
 
 The dataset includes sequential interpretation snapshots, well trajectories, and evaluation metrics, making it well-suited for studies in decision-making under uncertainty, human-AI interaction, and subsurface modeling. Two distinct drilling scenarios (conventional and unconventional) are featured, with all participants using the same baseline model and tools, enabling direct comparison of decision strategies and outcomes.
 
@@ -52,7 +52,7 @@ Extract `round1.zip` or `round2.zip` and read the `json/` files to access full p
 
 ## Data Collection & Processing
 
-More than 10,000 snapshots were recorded through an online system, consisting of interpretations of log data for each participant's well and corresponding decisions, every 2 minutes. These snapshots form a comprehensive database that is useful and valuable to provide insights into the decision-making process of the geosteerers and learning for improving geosteering decision-making. The dataset utilized in this study is openly accessible and published alongside the paper.
+Around 10,000 snapshots were recorded through an online system, consisting of interpretations of log data for each participant's well and corresponding decisions, every 2 minutes. These snapshots form a comprehensive database that is useful and valuable to provide insights into the decision-making process of the geosteerers and learning for improving geosteering decision-making. The dataset utilized in this study is openly accessible and published alongside the paper.
 
 
 
@@ -68,7 +68,7 @@ Cheraghi, Y., Alyaev, S., Bratvold, R. B., Hong, A., Kuvaev, I., Clark, S., & Zh
 
 **The dataset**:  
 Alyaev, S., Cheraghi, Y., Kuvaev, I., Clark, S., & Zhuravlev, A. (2025).  
-*Supporting Data for Over 10,000 Directional Drilling Decisions from the Geosteering World Cup 2021* [Dataset].  
+*10,000 Interpretations and Decisions from the Geosteering World Cup 2021* [Dataset].  
 **Zenodo**. https://doi.org/10.5281/zenodo.XXXXXXX
 
 ```bibtex
@@ -85,7 +85,7 @@ Alyaev, S., Cheraghi, Y., Kuvaev, I., Clark, S., & Zhuravlev, A. (2025).
 
 @misc{Alyaev2025Dataset,
   author       = {Alyaev, Sergey and Cheraghi, Yasaman and Kuvaev, Igor and Clark, Stephen and Zhuravlev, Andrei},
-  title        = {Supporting Data for Over 10,000 Directional Drilling Decisions from the Geosteering World Cup 2021},
+  title        = {10,000 Interpretations and Decisions from the Geosteering World Cup 2021},
   year         = {2025},
   publisher    = {Zenodo},
   doi          = {10.5281/zenodo.XXXXXXX},
